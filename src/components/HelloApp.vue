@@ -6,7 +6,7 @@ export default {
 
 <template>
     <div>
-        <h1>Template Iniziale</h1>
+        <h1> Vite Yu-Gi-Oh</h1>
 
     </div>
 </template>
