@@ -1,5 +1,14 @@
 @use './_partial/reset' as *;
 @use './_partial/variables' as *;
+// Import all of Bootstrap's CSS
+// @import "~bootstrap/scss/bootstrap";
+
+// RILEVA ERRORE QUINDI PER IMPLEMENTARE BOOTSTRAP SCRIVO A MANO COSì
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+// USO I 2 PUNTINI PER USCIRE DALLE CARTELLE CORRENTI E PER ANDARE NELLA CARTELLA node_modules
+
+
+
 
 body {
     font-family: "Montserrat";

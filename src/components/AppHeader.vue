@@ -6,8 +6,8 @@
 </script>
 
 <template>
-    <header>
-        <h1>Yu-Gi-Oh Api</h1>
+    <header class="my-5">
+        <h1 class="text-center">Yu-Gi-Oh Api</h1>
     </header>
 </template>
 
