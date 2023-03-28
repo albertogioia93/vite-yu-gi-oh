@@ -1,15 +1,21 @@
 <script>
+import { store } from '../store';
     export default {
-        name: 'Footer'
+        name: 'Footer',
+        data() {
+            return {
+                store
+            }
+        }
     }
 
 </script>
 
 <template>
-    <div>
-        FOOTER
+    <footer class="text-center my-5">
+        Risultati trovati: NUMERO
 
-    </div>
+    </footer>
 </template>
 
 

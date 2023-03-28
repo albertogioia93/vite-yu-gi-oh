@@ -1,5 +1,6 @@
 <script>
 import axios from 'axios';
+import { store } from '../store';
 import CharacterCard from './CharacterCard.vue';
 export default {
     name: 'CharacterList',
@@ -8,13 +9,18 @@ export default {
     },
     data() {
         return {
-            characters: []
+            store,
+            // characters: []
         }
     },
     created() {
         // axios.get('inserisci indirizzo della API')
         // MI CRUSHA IL PC ALL'INSERIMENTO DEL LINK API SOTTOSTANTE
         // axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php')
+            // .then ((response) => {
+            //     console.log(response);
+            //     this.store.characters = response.data.results
+            // })
 
     }
 
@@ -23,10 +29,12 @@ export default {
 
 <template>
     <div class="container">
-        <div class="row">
-            <div class="col-12 col-sm-4 col-md-2">
-                <CharacterCard />
+        <div class="row g-3">
+            <div class="col-12 col-md-4">
+                <CharacterCard />  
             </div>
+            
+            
         </div>
 
     </div>
