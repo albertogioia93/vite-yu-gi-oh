@@ -23,5 +23,6 @@ export default {
 <style lang="scss" scoped>
 article {
     background-color: orange;
+    height: 100%;
 }
 </style>
