@@ -20,4 +20,8 @@ export default {
 </template>
 
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+article {
+    background-color: orange;
+}
+</style>
