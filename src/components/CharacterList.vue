@@ -1,9 +1,21 @@
 <script>
+import axios from 'axios';
 import CharacterCard from './CharacterCard.vue';
 export default {
     name: 'CharacterList',
     components: {
         CharacterCard
+    },
+    data() {
+        return {
+            characters: []
+        }
+    },
+    created() {
+        // axios.get('inserisci indirizzo della API')
+        // MI CRUSHA IL PC ALL'INSERIMENTO DEL LINK API SOTTOSTANTE
+        // axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php')
+
     }
 
 }
