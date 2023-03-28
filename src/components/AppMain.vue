@@ -1,9 +1,11 @@
 <script>
     import CharacterSearch from './CharacterSearch.vue';
+    import CharacterList from './CharacterList.vue';
     export default {
         name: 'Header',
         components: {
-            CharacterSearch
+            CharacterSearch,
+            CharacterList,
 
         }
     }
@@ -13,6 +15,7 @@
 <template>
     <main>
         <CharacterSearch />
+        <CharacterList />
 
     </main>
 </template>
