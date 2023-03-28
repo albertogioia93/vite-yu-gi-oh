@@ -1,15 +1,20 @@
 <script>
+    import CharacterSearch from './CharacterSearch.vue';
     export default {
-        name: 'Header'
+        name: 'Header',
+        components: {
+            CharacterSearch
+
+        }
     }
 
 </script>
 
 <template>
-    <div>
-        MAIN
+    <main>
+        <CharacterSearch />
 
-    </div>
+    </main>
 </template>
 
 
