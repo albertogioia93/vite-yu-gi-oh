@@ -21,7 +21,7 @@ export default {
     <div class="container">
         <div class="row g-3">
             <div class="col-12 col-sm-6 col-md-2" v-for="character in store.characters">
-                <CharacterCard :image="character.image_url" :name="character.name" :archetype="character.archetype"/>  
+                <CharacterCard :image="character.card_images[0].image_url" :name="character.name" :archetype="character.archetype"/>  
             </div>
             
             

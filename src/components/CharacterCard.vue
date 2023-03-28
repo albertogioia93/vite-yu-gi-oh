@@ -13,7 +13,7 @@ export default {
 <template>
     <article>
         <div class="img"><img class="img-fluid" :src="image" alt=""></div>
-        <div>{{ name }}</div>
+        <h3>{{ name }}</h3>
         <div>{{ archetype }}</div>
     </article>
     
