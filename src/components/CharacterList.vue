@@ -13,17 +13,6 @@ export default {
             // characters: []
         }
     },
-    // created() {
-        // axios.get('inserisci indirizzo della API')
-        // MI CRUSHA IL PC ALL'INSERIMENTO DEL LINK API SOTTOSTANTE
-        // axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php')
-            // .then ((response) => {
-            //     console.log(response);
-            //     this.store.characters = response.data.results
-            //     this.store.charactersFound = response.data.results.length
-            // })
-
-    // }
 
 }
 </script>
@@ -32,7 +21,7 @@ export default {
     <div class="container">
         <div class="row g-3">
             <div class="col-12 col-sm-6 col-md-2" v-for="character in store.characters">
-                <CharacterCard />  
+                <CharacterCard :image="character.image_url" :name="character.name" :archetype="character.archetype"/>  
             </div>
             
             

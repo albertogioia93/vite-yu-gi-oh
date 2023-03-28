@@ -25,12 +25,15 @@ export default {
   created() {
         // axios.get('inserisci indirizzo della API')
         // MI CRUSHA IL PC ALL'INSERIMENTO DEL LINK API SOTTOSTANTE
-        // axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php')
-            // .then ((response) => {
-            //     console.log(response);
-            //     this.store.characters = response.data.results
-            //     this.store.charactersFound = response.data.results.length
-            // })
+        axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php')
+            .then ((response) => {
+                console.log(response);
+                const characters = response.data.data.splice(0, 100);
+                // this.store.characters = response.data.results
+                this.store.characters = characters
+                // this.store.charactersFound = response.data.results.length
+                this.store.charactersFound = characters.length
+            });
 
   }
 }

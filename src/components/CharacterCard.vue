@@ -2,8 +2,8 @@
 export default {
     name: 'CharacterCard',
     props: {
-        image_url: String,
-        title: String,
+        image: String,
+        name: String,
         archetype: String,
     }
 
@@ -12,9 +12,9 @@ export default {
 
 <template>
     <article>
-        <div class="img"><img class="img-fluid" src="https://picsum.photos/300" alt=""></div>
-        <div>nome card</div>
-        <div>archetipo</div>
+        <div class="img"><img class="img-fluid" :src="image" alt=""></div>
+        <div>{{ name }}</div>
+        <div>{{ archetype }}</div>
     </article>
     
 </template>
