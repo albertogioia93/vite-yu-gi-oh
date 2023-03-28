@@ -1,6 +1,12 @@
 <script>
+import { store } from '../store';
 export default {
-    name: 'Search'
+    name: 'Search',
+    data() {
+        return {
+            store
+        }
+    }
 }
 
 </script>
@@ -12,9 +18,9 @@ export default {
                 <label for="search-status" class="form-label d-none"></label>
                 <select class="form-select" aria-label="Default select example" id="search-status">
                     <option selected>Cerca il tuo archetipo</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <option>alien</option>
+                    <option>melodious</option>
+                    <option>umi</option>
                 </select>
 
             </div>
