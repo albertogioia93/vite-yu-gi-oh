@@ -13,7 +13,7 @@ import { store } from '../store';
 
 <template>
     <footer class="text-center my-5">
-        Risultati trovati: NUMERO
+        Risultati trovati: {{ store.charactersFound }}
 
     </footer>
 </template>

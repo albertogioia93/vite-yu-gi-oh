@@ -1,5 +1,11 @@
 <script>
+// LIBRERIE
+import axios from 'axios';
 
+// FUNZIONI
+import { store } from './store';
+
+// COMPONENTI
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
@@ -10,7 +16,22 @@ export default {
     AppHeader,
     AppMain,
     AppFooter,
-    
+  },
+  data(){
+    return {
+      store
+    }
+  },
+  created() {
+        // axios.get('inserisci indirizzo della API')
+        // MI CRUSHA IL PC ALL'INSERIMENTO DEL LINK API SOTTOSTANTE
+        // axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php')
+            // .then ((response) => {
+            //     console.log(response);
+            //     this.store.characters = response.data.results
+            //     this.store.charactersFound = response.data.results.length
+            // })
+
   }
 }
 </script>
